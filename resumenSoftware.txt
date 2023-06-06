@@ -1,0 +1,3 @@
+chrome
+Microsoft office
+git bash

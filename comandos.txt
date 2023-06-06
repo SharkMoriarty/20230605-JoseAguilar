@@ -1,0 +1,105 @@
+
+USER@DESKTOP-DCLKNHQ MINGW64 ~
+$ cd ~/desktop/Examen
+
+USER@DESKTOP-DCLKNHQ MINGW64 ~/desktop/Examen
+$ git init
+Initialized empty Git repository in C:/Users/USER/Desktop/Examen/.git/
+git
+USER@DESKTOP-DCLKNHQ MINGW64 ~/desktop/Examen (master)
+$ git config --local user.name "20230605-JoseAguilar"
+
+
+
+USER@DESKTOP-DCLKNHQ MINGW64 ~/desktop/Examen (master)
+$ touch comandos.txt main.js Index.html
+
+USER@DESKTOP-DCLKNHQ MINGW64 ~/desktop/Examen (master)
+$ git add .
+
+USER@DESKTOP-DCLKNHQ MINGW64 ~/desktop/Examen (master)
+$ git commit -m "Commit 01 de JoseAguilar"
+[master (root-commit) 8a4f955] Commit 01 de JoseAguilar
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Index.html
+ create mode 100644 comandos.txt
+ create mode 100644 main.js
+
+USER@DESKTOP-DCLKNHQ MINGW64 ~/desktop/Examen (master)
+$ git remote add origin https://github.com/SharkMoriarty/20230605-JoseAguilar.git
+
+USER@DESKTOP-DCLKNHQ MINGW64 ~/desktop/Examen (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 260 bytes | 260.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/SharkMoriarty/20230605-JoseAguilar.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+USER@DESKTOP-DCLKNHQ MINGW64 ~/desktop/Examen (master)
+$ git branch feature
+
+USER@DESKTOP-DCLKNHQ MINGW64 ~/desktop/Examen (master)
+$ git checkout feature
+Switched to branch 'feature'
+
+USER@DESKTOP-DCLKNHQ MINGW64 ~/desktop/Examen (feature)
+$ mkdir Hardware Software SeguridadInformatica
+
+USER@DESKTOP-DCLKNHQ MINGW64 ~/desktop/Examen (feature)
+$ touch Hardware/resumen.txt
+
+USER@DESKTOP-DCLKNHQ MINGW64 ~/desktop/Examen (feature)
+$ touch Software/resumen.txt
+
+USER@DESKTOP-DCLKNHQ MINGW64 ~/desktop/Examen (feature)
+$ touch SeguridadInformatica/resumen.txt
+
+USER@DESKTOP-DCLKNHQ MINGW64 ~/desktop/Examen (feature)
+$ git add .
+
+USER@DESKTOP-DCLKNHQ MINGW64 ~/desktop/Examen (feature)
+$ git commit -m "commit 02 de JoseAguilar"
+[feature 3effcb8] commit 02 de JoseAguilar
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Hardware/resumen.txt
+ create mode 100644 SeguridadInformatica/resumen.txt
+ create mode 100644 Software/resumen.txt
+
+USER@DESKTOP-DCLKNHQ MINGW64 ~/desktop/Examen (feature)
+$ git push --set-upstream origin feature
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 393 bytes | 393.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/SharkMoriarty/20230605-JoseAguilar/pull/new/feature
+remote:
+To https://github.com/SharkMoriarty/20230605-JoseAguilar.git
+ * [new branch]      feature -> feature
+branch 'feature' set up to track 'origin/feature'.
+
+USER@DESKTOP-DCLKNHQ MINGW64 ~/desktop/Examen (feature)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+USER@DESKTOP-DCLKNHQ MINGW64 ~/desktop/Examen (master)
+$ git mv main.js resumenHardware.txt
+
+USER@DESKTOP-DCLKNHQ MINGW64 ~/desktop/Examen (master)
+$ git mv Index.html resumenSoftware.txt
+
+USER@DESKTOP-DCLKNHQ MINGW64 ~/desktop/Examen (master)
+$ git pull
+Already up to date.
+
+USER@DESKTOP-DCLKNHQ MINGW64 ~/desktop/Examen (master)
+$ git add .
